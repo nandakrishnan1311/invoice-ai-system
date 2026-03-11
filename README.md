@@ -152,3 +152,26 @@ TESSERACT_CMD=C:\Program Files\Tesseract-OCR\tesseract.exe
 - Email notifications when new invoices are processed
 - Better OCR pre-processing (deskew, denoise) for low-quality scans
 - Support for more invoice formats (XML, EDI)
+
+## 🎥 Demo Video
+Watch the full system working end-to-end:
+👉 https://youtu.be/CSJ6YdFZabY
+
+## ⚠️ Known Limitations & Future Improvements
+
+### Current Limitations
+- HuggingFace free tier is slow for large batches (100+ invoices)
+- Gemini free tier quota resets every 24 hours
+- Tesseract OCR accuracy drops on low-quality scanned documents
+- Email monitoring searches last 7 days only
+- English language invoices only
+- Single-user system (no authentication)
+
+### Future Improvements
+- Add JWT authentication for multi-user support
+- OCR pre-processing: deskewing and denoising for better accuracy
+- Support XML and EDI invoice formats
+- Schedule pipeline to run automatically (hourly/daily)
+- Mobile responsive UI and PWA support
+- Integration with Tally / QuickBooks
+- Support multilingual invoices (Hindi, Tamil, Telugu)
